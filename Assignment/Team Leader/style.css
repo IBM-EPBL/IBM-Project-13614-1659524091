@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+body{
+    background-color: rgb(236, 161, 49);
+}
+
+h1{
+  text-align: center;
+  margin-bottom: 50px;
+}
+#register{
+   text-align: center;
+   background-color: cornsilk;
+   margin-left: 35%;
+   margin-right: 35%;
+   padding: 50px;
+   border: 2px solid black;
+   
+}
+button{
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+}
+button:hover{
+    cursor: pointer;
+    background-color: aqua;
+    
+}

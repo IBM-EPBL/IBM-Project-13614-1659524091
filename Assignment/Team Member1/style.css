@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+body{
+    background-color: rgb(177, 224, 82);
+}
+
+h1{
+  text-align: center;
+  margin-bottom: 50px;
+  font-family: Georgia, Times, 'Times New Roman', serif;
+}
+#register{
+   text-align: center;
+   background-color: rgb(255, 255, 255);
+   margin-left: 35%;
+   margin-right: 35%;
+   padding: 50px;
+   border: 2px solid black;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   
+}
+button{
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+}
+button:hover{
+    cursor: pointer;
+    background-color: rgb(52, 71, 71);
+    
+}

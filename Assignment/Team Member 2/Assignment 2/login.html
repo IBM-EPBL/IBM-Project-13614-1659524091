@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Form!</title>
+
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <link href="{{url_for('static', filename='stylesheet.css')}}" rel="stylesheet">
+
+</head>
+<body>
+    <!-- nav bar code begin -->
+    <nav class="navbar bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="{{url_for('static', filename='password.png')}}" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+            User Login
+          </a>
+        </div>
+    </nav>
+
+    <!-- nav bar code ends -->
+
+    <!-- login code starts -->
+   <div id="container">
+    <form action="/receivedata" method="POST">
+        <div class="mb-3">
+          <label for="email" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="email" aria-describedby="emailHelp" name="email" required>
+         
+        </div>
+        <div class="mb-3">
+          <label for="name" class="form-label">Password</label>
+          <input type="varchar" class="form-control" id="password" name="password" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+
+    </form>
+    </div>
+    <!-- login code ends -->
+</body>
+</html>

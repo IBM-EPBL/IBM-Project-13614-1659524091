@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sabari</title>
+</head>
+<body>
+  <h1>Hey this is Drago your Virtual Assistant !! Use the chat option to solve your problem</h1>
+  <script>
+    window.watsonAssistantChatOptions = {
+      integrationID: "28a41317-5dfd-41a1-b6db-e80f6bf368d1", // The ID of this integration.
+      region: "au-syd", // The region your integration is hosted in.
+      serviceInstanceID: "38a0ef33-bfa2-4fde-80af-5ff4c9a07601", // The ID of your service instance.
+      onLoad: function(instance) { instance.render(); }
+    };
+    setTimeout(function(){
+      const t=document.createElement('script');
+      t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+      document.head.appendChild(t);
+    });
+  </script>
+ 
+</body>
+</html>

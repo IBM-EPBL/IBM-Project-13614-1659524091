@@ -1,0 +1,1 @@
+pending -> container creation -> runnign -> terminating ==> life cycle

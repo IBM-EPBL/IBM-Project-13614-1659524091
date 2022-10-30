@@ -1,0 +1,13 @@
+.back{
+   background-color: white;
+}
+.errMsg{
+   color: red !important;
+}
+.product{
+   height: 50%;
+}
+.cardContainer{
+   max-width: 100%;
+   margin: 2%;
+}
